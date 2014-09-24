@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hola Mundo - ANA!</string>
+    <string name="app_name">ANA</string>
+	<string name="titulo">A.N.A.\nAtaque Nuclear Androide</string>
+
+	<!-- PREFERENCIAS -->
+    <string name="preferenciasTitulo">Preferencias</string>
+    <string name="preferenciasCategoria1Titulo">Interfaz</string>
+    <string name="preferenciasCategoria2Titulo">Juego</string>
+    <string name="preferenciasAcelerometroTitulo">Acelerómetro</string>
+    <string name="preferenciasAcelerometroResumen">Sensibilidad del acelerómetro</string>
+    <string-array name="preferenciasAcelerometroOpciones">
+        <item>Acelerómetro desconectado</item>
+        <item>Acelerómetro - Sensibilidad baja</item>
+        <item>Acelerómetro - Sensibilidad media</item>
+        <item>Acelerómetro - Sensibilidad alta</item>
+    </string-array>
+    <string-array name="preferenciasAcelerometroValores">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+	<string name="preferenciasSonidoTitulo">Sonido</string>
+	<string name="preferenciasSonidoResumen">Des/Activar Sonido</string>
+	<string name="preferenciasTutorialTitulo">Ayuda inicial</string>
+	<string name="preferenciasTutorialResumen">Mostrar ayuda inicial</string>
+	<string name="preferenciasNombreJugadorTitulo">Nombre Jugador</string>
+	<string name="preferenciasNombreJugadorResumen">Configurar nombre del jugador</string>
+
+	<!-- MENSAJES SPLASH -->
+	<string name="splash_presentado_por">Presentado por</string>
+
+	<!-- MENSAJES JUEGO -->
+	<string name="juego_pausa">Pausa</string>
+	<string name="juego_puntuacion">Puntos: </string>
+	<string name="juego_creditos">Créditos </string>
+	<string name="juego_nivel">Nivel: </string>
+	<string name="juego_toque_pantalla">TOQUE LA PANTALLA</string>
+	<string name="juego_toque_aqui">TOQUE AQUÍ</string>
+	<string name="juego_fin">FIN</string>
+	<string name="juego_pulse_back">PULSE LA TECLA "ATRÁS"</string>
+	<string name="juego_felicidades">¡FELICIDADES!</string>
+	<string name="juego_nivel_terminado">NIVEL TERMINADO</string>
+	<string name="juego_bonos">PUNTOS EXTRA</string>
+	<string name="juego_enemigos_eliminados">ENEMIGOS DESTRUIDOS</string>
+	<string name="juego_blindaje">BLINDAJE</string>
+	<string name="juego_naves_extra">NAVES EXTRA</string>
+	<string name="juego_bombas">BOMBAS</string>
+	<string name="juego_tienda">TIENDA</string>
+	<string name="juego_compra">Utilice los créditos para obtener armamento</string>
+	<string name="juego_compra_bomba">COMPRAR BOMBA</string>
+	<string name="juego_bomba_comprada">Bomba cargada</string>
+	<string name="juego_bombas_maximas">No puede cargar más bombas</string>
+	<string name="juego_compra_vida">COMPRAR BLINDAJE</string>
+	<string name="juego_vida_comprada">Blindaje mejorado</string>
+	<string name="juego_vidas_maximas">El blindaje está al máximo</string>
+	<string name="juego_compra_nave">COMPRAR NAVE EXTRA</string>
+	<string name="juego_nave_comprada">Nave asignada</string>
+	<string name="juego_naves_maximas">Máximo alcanzado</string>
+	<string name="juego_sin_creditos">NO TIENE CRÉDITOS SUFICIENTES</string>
+	<string name="juego_version_pro_solo">(No disponible todavía)</string>
+	<string name="juego_version_pro">Más armas, niveles y enemigos en próximas versiones</string>
+	<string name="juego_tutorial_1">La nave se controla moviendo el dispositivo (acelerómetro)</string>
+	<string name="juego_tutorial_2">o mediante las teclas de control.</string>
+	<string name="juego_tutorial_3">Puede lanzar bombas tocando abajo a la derecha.</string>
+	<string name="juego_tutorial_4">Use las preferencias para cambiar el nombre del piloto.</string>
+
+	<!-- BOTONES INICIO JUEGO -->
+	<string name="botonInicio">Jugar</string>
+	<string name="botonAcelerometro">Acelerómetro</string>
+	<string name="botonSonido">Sonido</string>
+	<string name="botonAyuda">Ayuda</string>
+	<string name="botonAcercaDe">Acerca de&#8230;</string>
+	<string name="botonPuntuaciones">Puntuaciones</string>
+	<string name="botonMasJuegos">Más Juegos</string>
+	<string name="botonSalir">Salir</string>
+
+	<!-- MENSAJES ACELEROMETRO -->
+	<string name="acelDesconectado">Acelerómetro desconectado</string>
+	<string name="acelSensibilidadBaja">Acelerómetro con sensibilidad baja</string>
+	<string name="acelSensibilidadMedia">Acelerómetro con sensibilidad media</string>
+	<string name="acelSensibilidadAlta">Acelerómetro con sensibilidad alta</string>
+	<string name="acelError">No sé cómo he llegado aquí&#8230;\n Acelerómetro con sensibilidad media</string>
+
+	<!-- MENU -->
+	<string name="menuBotonCerrar">Cerrar</string>
+	<string name="menuBotonSi">Sí</string>
+	<string name="menuBotonNo">No</string>
+	<string name="menuSonido">Sonido</string>
+		<string name="menuSonidoTitulo">Sonido</string>
+		<string name="menuSonidoOpcDesconectado">Desconectado</string>
+		<string name="menuSonidoOpcConectado">Conectado</string>
+	<string name="menuAcelerometro">Acelerómetro</string>
+		<string name="menuAcelTitulo">Configuración Acelerómetro</string>
+		<string name="menuAcelOpcDesconectado">Desconectado</string>
+		<string name="menuAcelOpcSensibilidadBaja">Sensibilidad baja</string>
+		<string name="menuAcelOpcSensibilidadMedia">Sensibilidad media</string>
+		<string name="menuAcelOpcSensibilidadAlta">Sensibilidad alta</string>
+	<string name="menuAyuda">Ayuda</string>
+		<string name="menuAyudaTitulo">Ayuda\nANA</string>
+		<string name="menuAyudaTexto">Ataque Nuclear Androide\n
+\n
+¡Las naves androide están atacando!\n
+&#8230;y usted es el primer bastión de nuestra defensa.\n
+\n
+En sus manos está la mejor pieza de tecnología creada por la humanidad, diseñada para enfrentarse a las hordas de naves androide.\n
+Confiamos en usted.\n
+¡Mucha suerte!\n
+\n
+=== CONTROLES ===\n
+El movimiento de la nave se controla moviendo el dispositivo (acelerómetro) o mediante las teclas de control. La nave dispara automáticamente. Además la nave carga con varias bombas que el piloto lanza usando el botón de bombas.\n
+\n
+=== LA PANTALLA ===\n
+[ ARRIBA ]\n
+* PUNTOS - Arriba a la derecha se indican los puntos obtenidos. Cuantos más Androides elimine, más puntos obtendrá. Pero, ojo, cada vez que se escape una nave androide perderá puntos.\n
+\n
+* BARRA DE BLINDAJE - Esta barra indica el estado de la nave. Cuando llega a 0 la nave se destruye.\n
+\n
+* NAVES DE REPUESTO - Comienza el juego con 2 naves de repuesto (además de la nave que pilota al inicio). Cuando la última nave es destruida, termina el juego. Pueden conseguirse nuevas naves de repuesto con los puntos obtenidos.\n
+\n
+[ ABAJO ]\n
+* BOTÓN DE BOMBAS - Abajo a la derecha de la pantalla está, mientras quedan bombas disponibles, el botón para lanzar bombas. Comienza el juego con 3 bombas. Puede conseguir nuevas bombas durante el juego.\n
+\n
+* AVISO RADAR - Abajo a la izquierda de la pantalla, cuando se acercan naves androide por detrás, el radar lanza un aviso visual y sonoro.\n
+\n
+=== ENEMIGOS ===\n
+Cada nave androide tiene una programación, blindaje y armamento diferenciados. Aprenda el comportamiento y características de cada tipo de nave para mejorar sus capacidades de ataque y defensa.\n
+\n
+* ROCAS - Las rocas no son enemigos suyos&#8230; pero no se recomienda chocar contra ellas. No es probable que consiga destruirlas&#8230; bueno, quizá alguna pequeñíta.\n
+\n
+=== CÁPSULAS ===\n
+Siempre que resulte posible, le será enviada una capsula de ayuda. Debe disparar contra ellas para poder acceder a las ayudas: unas le permiten incrementar el blindaje de su nave actual, otras le dan bombas, créditos, naves extra&#8230;\n
+\n
+		</string>
+	<string name="menuPuntuaciones">Puntuaciones</string>
+	<string name="menuAcercaDe">Acerca de&#8230;</string>
+		<string name="menuAcercaTitulo">Acerca de&#8230;\nANA</string>
+		<string name="menuAcercaTexto">Realizado por Güimi (2010)\n
+			http://guimi.net\n
+			\n
+			Desarrollo inicial basado en ejemplos y tutoriales de Google, http://www.droidnova.com, http://www.anddev.org y http://blog.androgames.net.\n
+			\n
+			Gráficos principales de Prinz Eugn y Ari Feldman con modificaciones de Güimi.\n
+			Gráficos auxiliares de Güimi, ironstarmedia.co.uk y Google.\n
+			\n
+			Dedicado a Ana.\n
+		</string>
+	<string name="menuSalir">Salir</string>
+		<string name="menuSalirTitulo">Salir</string>
+		<string name="menuSalirTexto">¿Está seguro que desea salir?</string>
+		<string name="menuSalirTexto_Jugando">Si sale finalizará la partida\n¿Está seguro que desea salir?</string>
+	<string name="menuJugar">Jugar</string>
+	<string name="menuMasJuegos">Más Juegos</string>
+
+	<string name="linea_blanco">\n</string>
+	<string name="guimi_net">http://www.guimi.net</string>
+	<string name="guimi">Güimi</string>
+		
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright (c) 2004-2010 Luis Miguel Armendáriz
+	http://guimi.net
+
+	Está permitido copiar, distribuir y/o modificar
+ 	los desarrollos bajo los términos de la
+ 	GNU General Public License, Versión 2
+
+	Para obtener una copia de dicha licencia
+ 	visite http://www.fsf.org/licenses/gpl.txt.
+
+	Basado en http://developer.android.com/resources/samples/Snake
+	de The Android Open Source Project - Copyright (C) 2007
+	Licensed under the Apache License, Version 2.0
+	
+-->
+
+<!-- Iniciamos el manifiesto indicando que es una aplicación de android
+	el nombre del paquete (al que deben pertenecer los .java)
+	y la versión del código (código y nombre).
+	versionCode es el dato que toma en cuenta para actualizar una aplicación.
+		Si versionCode de la aplicación a instalar es mayor que versionCode
+		de la aplicacion instalada (y es la misma aplicación, con la misma firma...)
+		ofrece actualizar.
+	versionName es el nombre oficial de la versión.
+ -->
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="net.guimi.ANA"
+	android:versionCode="7"
+	android:versionName="0.1.5-Beta">
+
+	<!-- Versión mínima de la API que necesita la app
+			5: android 2.0
+			7: android 2.1-update1 -->
+	<uses-sdk android:minSdkVersion="7" />
+
+	<!--  Indicamos que hacemos uso del vibrador
+		pero que no es un requisito imprescindible
+		para que la aplicación esté disponible para dispositivos sin vibrador
+		No he encontrado como hacer que se pueda ejecutar la aplicación sin permiso 
+		de vibración. Es decir, si el usuario no autoriza a acceder al vibrador la aplicación
+		puede funcionar perfectamente, pero el sistema no deja instalar. -->
+	<uses-permission
+		android:name="android.permission.VIBRATE" />
+		android:required="false" />
+	<!-- Hacemos uso de wake lock para evitar que el dispositivo "se duerma" durante el juego -->
+	<uses-permission
+		android:name="android.permission.WAKE_LOCK" />
+	<!-- Hacemos uso de internet para mostrar Más Juegos y puntuaciones globales -->
+	<!-- uses-permission
+		android:name="android.permission.INTERNET" / -->
+
+	<!-- Indicamos que solo queremos utilizar resolución "normal" HVGA 320x480 -->
+	<supports-screens
+		android:smallScreens="false"
+		android:normalScreens="true"
+		android:largeScreens="false"
+		android:anyDensity="false" />
+		
+
+	<!-- Indicamos el icono y nombre de la aplicación en el sistema -->
+    <application
+    	android:icon="@drawable/icono"
+       	android:theme="@style/Theme.ANATheme"
+    	android:label="@string/app_name">
+
+        <!--  El tema puede aplicarse por actividades en vez de por aplicación -->
+        
+		<!-- Cada actividad indica el archivo .java (name)
+			Ademas indicamos que no queremos que se vea la barra de título y notificación
+			que trabajamos en modo "portrait" 
+			y que admitimos cambios según el teclado esté o no y según la orientación -->
+		<!-- Nuestra actividad inicial, que será un menú de opciones -->
+        <activity
+        	android:name="ANA"
+        	android:label="@string/app_name"
+			android:screenOrientation="portrait"
+			android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<!-- Nuestra actividad "Splash", que dura unos segundos al lanzarse la aplicación.
+			   Esta actividad es lanzada desde la actividad inicial de menú ("ANA")-->
+		<activity
+			android:name="Splash"
+			android:screenOrientation="portrait"
+			android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<!--  Esta es la actividad del Juego en sí mismo.
+			    Esta actividad es lanzada desde la actividad inicial de menú ("ANA")-->
+		<activity
+			android:name="ANAJuego"
+			android:screenOrientation="portrait"
+			android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity
+			android:name="Preferencias"
+			android:label="@string/preferenciasTitulo"
+			android:screenOrientation="portrait"
+			android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity
+			android:name="Puntuaciones"
+			android:label="@string/menuPuntuaciones"
+			android:screenOrientation="portrait"
+			android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity
+			android:name="Web"
+			android:label="@string/menuMasJuegos"
+			android:screenOrientation="portrait"
+			android:configChanges="keyboardHidden|orientation">
+		</activity>
+		<activity
+			android:name="Tienda"
+			android:label="@string/juego_tienda"
+			android:screenOrientation="portrait"
+			android:configChanges="keyboardHidden|orientation">
+		</activity>
+	</application>
+</manifest>

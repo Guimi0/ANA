@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- based on http://www.kaloer.com/android-preferences -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory 
+		android:title="@string/preferenciasCategoria1Titulo">
+		<CheckBoxPreference
+			android:key="miPrefSonido"
+			android:title="@string/preferenciasSonidoTitulo"
+			android:summary="@string/preferenciasSonidoResumen"
+			android:defaultValue="true"
+			/>
+		<ListPreference
+            android:key="miPrefAcelerometro"
+			android:title="@string/preferenciasAcelerometroTitulo"
+            android:summary="@string/preferenciasAcelerometroResumen"
+            android:defaultValue="2"
+            android:entries="@array/preferenciasAcelerometroOpciones"
+            android:entryValues="@array/preferenciasAcelerometroValores"
+            />
+	</PreferenceCategory>
+	<PreferenceCategory
+    	android:title="@string/preferenciasCategoria2Titulo">
+		<EditTextPreference
+            android:key="miPrefNombre"
+            android:title="@string/preferenciasNombreJugadorTitulo"
+            android:summary="@string/preferenciasNombreJugadorResumen"
+            android:defaultValue="Guimi"
+            android:maxLength="15"
+            android:digits="ABCÇDEFGHIJKLMNÑOPQRSTUVWXYZabcçdefghijklmnñopqrstuvwxyzÁÉÍÓÚÜáéíóúü 0123456789#@;:-_.,*+!$%/()=?"
+            />
+		<CheckBoxPreference
+			android:key="miPrefTutorial"
+			android:title="@string/preferenciasTutorialTitulo"
+			android:summary="@string/preferenciasTutorialResumen"
+			android:defaultValue="true"
+			/>
+	</PreferenceCategory>
+</PreferenceScreen>

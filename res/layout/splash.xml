@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright (c) 2004-2010 Luis Miguel Armendáriz
+	http://guimi.net
+
+	Está permitido copiar, distribuir y/o modificar
+ 	los desarrollos bajo los términos de la
+ 	GNU General Public License, Versión 2
+
+	Para obtener una copia de dicha licencia
+ 	visite http://www.fsf.org/licenses/gpl.txt.
+
+-->
+<!-- Indicamos el tipo de distribución
+	Asignamos un identificador (para poder referirnos a él en el código)
+	Indicamos que utilice todo el ancho y alto disponible
+	Asignamos una imagen para el fondo.
+-->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/splashLayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:gravity="center"
+    >
+	<!-- 
+		android:textColor="#00FF00"
+		android:typeface="monospace"
+		 -->
+	<TextView android:id="@+id/main_titulo"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:gravity="center_horizontal"
+		android:textStyle="bold"
+		android:textSize="17sp"
+		android:text="@string/titulo"/>
+	<TextView android:id="@+id/splash_linea_blanco_02"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textSize="7sp"
+		android:text="@string/linea_blanco"/>
+	<ImageView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:contentDescription="@string/app_name"
+		android:src="@drawable/heroe"/>
+	<TextView android:id="@+id/splash_linea_blanco03"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textSize="7sp"
+		android:text="@string/linea_blanco"/>
+	<TextView android:id="@+id/splash_presentado_por"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="@string/splash_presentado_por"
+		android:gravity="center_horizontal" />
+	<ImageView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:contentDescription="@string/guimi"
+		android:src="@drawable/guimi_22"/>
+	<TextView android:id="@+id/splash_web"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="@string/guimi_net"
+		android:gravity="center_horizontal" />
+</LinearLayout>
+	

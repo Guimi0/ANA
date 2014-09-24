@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright (c) 2004-2010 Luis Miguel Armendáriz
+	http://guimi.net
+
+	Está permitido copiar, distribuir y/o modificar
+ 	los desarrollos bajo los términos de la
+ 	GNU General Public License, Versión 2
+
+	Para obtener una copia de dicha licencia
+ 	visite http://www.fsf.org/licenses/gpl.txt.
+
+-->
+<!-- Indicamos el tipo de distribución
+	Asignamos un identificador (para poder referirnos a él en el código)
+	Indicamos que utilice todo el ancho y alto disponible
+	Asignamos una imagen para el fondo.
+-->
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/mainLayout"
+    android:orientation="vertical"
+
+	android:layout_height="fill_parent"
+    android:layout_width="wrap_content"
+	android:layout_gravity="center_horizontal"
+	android:gravity="center"
+    >
+            
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" >
+
+            	<TextView android:id="@+id/main_titulo"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:textStyle="bold"
+					android:textSize="17sp"
+					android:layout_width="245dp"
+					android:layout_span="2"
+					android:text="@string/titulo"/>
+	
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1a"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" >
+				<TextView android:id="@+id/main_linea_blanco01"
+					android:layout_height="wrap_content"
+					android:textSize="5sp"
+					android:layout_width="245dp"
+					android:layout_span="2"
+					android:text="@string/linea_blanco"/>
+		</TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" >
+            	<Button
+					android:id="@+id/botonInicio"
+					android:text="@string/botonInicio"
+					android:layout_height="wrap_content"
+					android:textColor="#FFFFFF"
+					android:layout_width="245dp"
+					android:layout_span="2"
+					android:background="@drawable/boton_jugar_menu"
+        		/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2a"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" >
+				<TextView android:id="@+id/main_linea_blanco02"
+					android:layout_height="wrap_content"
+					android:textSize="9sp"
+					android:layout_width="245dp"
+					android:layout_span="2"
+					android:text="@string/linea_blanco"/>
+		</TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:gravity="center_horizontal"
+            android:padding="5dip"
+            android:layout_height="wrap_content" >
+				<Button
+					android:id="@+id/botonPreferencias"
+					android:text="@string/preferenciasTitulo"
+					android:layout_height="wrap_content"
+					android:textColor="#FFFFFF"
+					android:layout_width="120dp"
+					android:background="@drawable/boton_menu"
+        		/>
+
+				<Button
+					android:id="@+id/botonPuntuaciones"
+					android:text="@string/botonPuntuaciones"
+					android:layout_height="wrap_content"
+					android:textColor="#FFFFFF"
+					android:layout_width="120dp"
+					android:background="@drawable/boton_menu"
+        		/>
+
+		</TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:gravity="center_horizontal"
+            android:padding="5dip"
+            android:layout_height="wrap_content" >
+				<Button
+					android:id="@+id/botonAcercaDe"
+					android:text="@string/botonAcercaDe"
+					android:layout_height="wrap_content"
+					android:textColor="#FFFFFF"
+					android:layout_width="120dp"
+					android:background="@drawable/boton_menu"
+        		/>
+
+				<Button
+					android:id="@+id/botonAyuda"
+					android:text="@string/botonAyuda"
+					android:layout_height="wrap_content"
+					android:textColor="#FFFFFF"
+					android:layout_width="120dp"
+					android:background="@drawable/boton_menu"
+        		/>
+		</TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" >
+				<TextView android:id="@+id/main_linea_blanco04"
+					android:layout_height="wrap_content"
+					android:textSize="7sp"
+					android:layout_width="245dp"
+					android:layout_span="2"
+					android:text="@string/linea_blanco"/>
+		</TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" >
+				<TextView android:id="@+id/splash_presentado_por"
+					android:layout_height="wrap_content"
+					android:text="@string/splash_presentado_por"
+					android:layout_width="245dp"
+					android:layout_span="2"
+					android:gravity="center_horizontal" />
+		</TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" >
+				<ImageView   
+					android:layout_height="wrap_content"
+					android:contentDescription="@string/guimi"
+					android:layout_width="245dp"
+					android:layout_span="2"
+					android:src="@drawable/guimi_22"/>
+		</TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" >
+				<TextView android:id="@+id/main_by"
+					android:layout_height="wrap_content"
+					android:text="@string/guimi_net"
+					android:layout_width="245dp"
+					android:layout_span="2"
+					android:gravity="center_horizontal" />
+        </TableRow>
+
+    </TableLayout>

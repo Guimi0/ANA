@@ -1,0 +1,69 @@
+package net.guimi.ANA;
+
+import java.util.ConcurrentModificationException;
+
+import android.graphics.Canvas;
+
+/**
+ * Thread class to perform the so called "game loop".
+ * 
+ * @author martin (http://www.droidnova.com)
+ * modified by Güimi (http://www.guimi.net)
+ */
+class ANAHilo extends Thread {
+	static final int RETARDO = 12; // En milisegundos
+    private Pantalla miPantalla;
+    private boolean esEnMarcha = false;
+    
+    /**
+     * Constructor
+     * @param panel View class on which we trigger the drawing.
+     */
+    public ANAHilo(Pantalla panel) {
+        miPantalla = panel;
+    }
+    
+    /** @param run Should the game loop keep running? */
+    public void ponEnMarcha(boolean en_marcha) {
+    	esEnMarcha = en_marcha;
+    }
+    
+    /** @return If the game loop is running or not. */
+    public boolean leeEnMarcha() {
+        return esEnMarcha;
+    }
+    
+    /**
+     * Bucle de juego.
+     * 1. Actualiza objetos
+     * 2. Comprueba colisiones
+     * 3. Dibuja la pantalla
+     */
+    @Override
+    public void run() {
+        Canvas c;
+        while (esEnMarcha) {
+            c = null;
+            try {
+                c = miPantalla.getHolder().lockCanvas(null);
+                synchronized (miPantalla.getHolder()) {
+                	sleep(RETARDO);
+                	miPantalla.actualizaObjetos();
+                	miPantalla.compruebaColisiones();
+                    miPantalla.onDraw(c);
+                }
+            } catch(InterruptedException e) {
+                // En caso de que se interrumpa el hilo mientras está en la pausa (sleep)
+            } catch(ConcurrentModificationException e) {
+                // Ocurre cuando termina un nivel y el hilo todavía intenta actualizar objetos o comprobar colisiones 
+            } finally {
+            	// Desbloqueamos y enviamos el lienzo en la claúsula "finally"
+            	// De esta forma nos aseguramos de no dejar la superficie en un estado inconsistente
+            	// si se produce una excepción durante el juego
+                if (c != null) {
+                    miPantalla.getHolder().unlockCanvasAndPost(c);
+                }
+            }
+        }
+    }
+}

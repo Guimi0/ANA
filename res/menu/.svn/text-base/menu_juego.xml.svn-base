@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright (c) 2004-2010 Luis Miguel Armendáriz
+	http://guimi.net
+
+	Está permitido copiar, distribuir y/o modificar
+ 	los desarrollos bajo los términos de la
+ 	GNU General Public License, Versión 2
+
+	Para obtener una copia de dicha licencia
+ 	visite http://www.fsf.org/licenses/gpl.txt.
+
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- item android:id="@+id/menuJuegoAcelerometro"
+          android:icon="@drawable/ic_menu_compass"
+          android:title="@string/menuAcelerometro"
+          / -->
+    <item android:id="@+id/menuJuegoJugar"
+          android:icon="@drawable/icono"
+          android:title="@string/menuJugar"
+          />
+    <!-- item android:id="@+id/menuJuegoSonido"
+          android:icon="@drawable/ic_menu_sound"
+          android:title="@string/menuSonido"
+          / -->
+    <item android:id="@+id/menuJuegoPreferencias"
+          android:icon="@drawable/ic_menu_preferences"
+          android:title="@string/preferenciasTitulo"
+          />          
+    <item android:id="@+id/menuJuegoSalir"
+          android:icon="@drawable/ic_menu_close_clear_cancel"
+          android:title="@string/menuSalir"
+          />
+</menu>

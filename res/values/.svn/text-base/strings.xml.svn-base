@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World - ANA!</string>
+    <string name="app_name">ANA</string>
+	<string name="titulo">A.N.A.\nAndroid Nuclear Attack</string>
+
+	<!-- PREFERENCIAS -->
+    <string name="preferenciasTitulo">Preferences</string>
+    <string name="preferenciasCategoria1Titulo">Interface</string>
+    <string name="preferenciasCategoria2Titulo">Game</string>
+    <string name="preferenciasAcelerometroTitulo">Accelerometer</string>
+    <string name="preferenciasAcelerometroResumen">Accelerometer sensibility</string>
+    <string-array name="preferenciasAcelerometroOpciones">
+        <item>Accelerometer disabled</item>
+        <item>Accelerometer - Low sensibility</item>
+        <item>Accelerometer - Medium sensibility</item>
+        <item>Accelerometer - High sensibility</item>
+    </string-array>
+    <string-array name="preferenciasAcelerometroValores">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+	<string name="preferenciasSonidoTitulo">Sound</string>
+	<string name="preferenciasSonidoResumen">Enable/Disable Sound</string>
+	<string name="preferenciasTutorialTitulo">Init help</string>
+	<string name="preferenciasTutorialResumen">Show init help</string>
+	<string name="preferenciasNombreJugadorTitulo">Player Name</string>
+	<string name="preferenciasNombreJugadorResumen">Set player name</string>
+
+	<!-- MENSAJES SPLASH -->
+	<string name="splash_presentado_por">Presented by</string>
+
+	<!-- MENSAJES JUEGO -->
+	<string name="juego_pausa">Paused</string>
+	<string name="juego_puntuacion">Points: </string>
+	<string name="juego_creditos">Credits </string>
+	<string name="juego_nivel">Level: </string>
+	<string name="juego_toque_pantalla">TOUCH THE SCREEN</string>
+	<string name="juego_toque_aqui">TOUCH HERE</string>
+	<string name="juego_fin">GAME OVER</string>
+	<string name="juego_pulse_back">PRESS BACK KEY TO MENU</string>
+	<string name="juego_felicidades">CONGRATULATIONS!</string>
+	<string name="juego_nivel_terminado">LEVEL FINISHED</string>
+	<string name="juego_bonos">BONUS POINTS</string>
+	<string name="juego_enemigos_eliminados">ENEMIES DESTROYED</string>
+	<string name="juego_blindaje">SHIELD</string>
+	<string name="juego_naves_extra">EXTRA SHIPS</string>
+	<string name="juego_bombas">BOMBS</string>
+	<string name="juego_tienda">STORE</string>
+	<string name="juego_compra">Use credits to buy armor and new weapons</string>
+	<string name="juego_compra_bomba">BUY BOMB</string>
+	<string name="juego_bomba_comprada">Bomb loaded</string>
+	<string name="juego_bombas_maximas">Can\'t carry more bombs</string>
+	<string name="juego_compra_vida">BUY SHIELD</string>
+	<string name="juego_vida_comprada">Shield improved</string>
+	<string name="juego_vidas_maximas">Can\'t improve shield</string>
+	<string name="juego_compra_nave">BUY EXTRA SHIP</string>
+	<string name="juego_nave_comprada">Ship assigned</string>
+	<string name="juego_naves_maximas">Can\'t assign more ships</string>
+	<string name="juego_sin_creditos">NOT ENOUGH CREDITS</string>
+	<string name="juego_version_pro_solo">(Not yet available)</string>
+	<string name="juego_version_pro">New weapons, levels and enemies coming soon</string>
+	<string name="juego_tutorial_1">The ship is controlled moving the device (accelerometer)</string>
+	<string name="juego_tutorial_2">or using the control keys.</string>
+	<string name="juego_tutorial_3">You can launch bombs touching at the down-right corner.</string>
+	<string name="juego_tutorial_4">Use preferences to change the name of the Pilot.</string>
+
+	<!-- BOTONES INICIO JUEGO -->
+	<string name="botonInicio">Play</string>
+	<string name="botonAcelerometro">Accelerometer</string>
+	<string name="botonSonido">Sound</string>
+	<string name="botonAyuda">Help</string>
+	<string name="botonAcercaDe">About&#8230;</string>
+	<string name="botonPuntuaciones">High Scores</string>
+	<string name="botonMasJuegos">More Games</string>
+	<string name="botonSalir">Quit</string>
+
+	<!-- MENSAJES ACELEROMETRO -->
+	<string name="acelDesconectado">Accelerometer disabled</string>
+	<string name="acelSensibilidadBaja">Accelerometer - Low sensibility</string>
+	<string name="acelSensibilidadMedia">Accelerometer - Medium sensibility</string>
+	<string name="acelSensibilidadAlta">Accelerometer - High sensibility</string>
+	<string name="acelError">WTF!&#8230;\n Accelerometer - Medium sensibility</string>
+
+	<!-- MENU -->
+	<string name="menuBotonCerrar">Close</string>
+	<string name="menuBotonSi">Yes</string>
+	<string name="menuBotonNo">No</string>
+	<string name="menuSonido">Sound</string>
+		<string name="menuSonidoTitulo">Sound</string>
+		<string name="menuSonidoOpcDesconectado">Disabled</string>
+		<string name="menuSonidoOpcConectado">Enabled</string>
+	<string name="menuAcelerometro">Accelerometer</string>
+		<string name="menuAcelTitulo">Accelerometer Setup</string>
+		<string name="menuAcelOpcDesconectado">Accelerometer disabled</string>
+		<string name="menuAcelOpcSensibilidadBaja">Accelerometer - Low sensibility</string>
+		<string name="menuAcelOpcSensibilidadMedia">Accelerometer - Medium sensibility</string>
+		<string name="menuAcelOpcSensibilidadAlta">Accelerometer - High sensibility</string>
+	<string name="menuAyuda">Help</string>
+		<string name="menuAyudaTitulo">Help\nANA</string>
+		<string name="menuAyudaTexto">Android Nuclear Attack.\n
+\n
+The androidships are attacking!\n
+&#8230;and you are the first line of our defense.\n
+\n
+In your hands it is the best piece of technology created by the humanity, designed to face the hordes of androidships.\n
+We trust you.\n
+Good luck!\n
+\n
+=== CONTROLS ===\n
+The movement of the ship is controlled moving the device (accelerometer) or using the control keys. The ship shoots automatically. In addition the ship loads with several bombs. You can shoot them with the button of bombs.\n
+\n
+=== SCREEN ===\n
+[ TOP ]\n
+* POINTS - Above to the right the obtained points are indicated. Whatever more Androids eliminate, more points will obtain. But, attention, whenever an androidship escapes you lose points.\n
+\n
+* SHIELD BAR - This bar indicates the state of the ship. When it arrives at 0 the ship is destroyed.\n
+\n
+* EXTRA SHIPS - The game begins with 2 extra ships (besides the ship that you pilot at the beginning). When the last ship is destroyed, the game finishes. New extra ships can be obtained during the game.\n
+\n
+[ BOTTOM ]\n
+* BOMBS BUTTON - Down to the right of the screen it is, while they are bombs available, the button to fire bombs. The game begins with 3 bombs. You can obtain new bombs during the game.\n
+\n
+* RADAR WARNING - Down to the left of the screen, when androidships approach by behind, the radar sends a visual and sonorous warning.\n
+\n
+=== ENEMY ===\n
+Each androidship has a differentiated programming, shield and armament. Learn the behavior and characteristics of each type of ship to improve your defense and offensive capabilities.\n
+\n
+* ROCKS - the rocks are not your enemy&#8230; but it is not recommended to crash against them. Odds are you cannot destroy them&#8230; well, perhaps some little ones.\n
+\n
+=== CAPSULES ===\n
+Whenever it is possible, an aid capsule will be sent. You must shoot against them to reach to the aid: they allow you to increase the shield of your present ship, others give bombs, credits, extra ships&#8230;\n
+\n
+		</string>
+	<string name="menuPuntuaciones">High Scores</string>
+	<string name="menuAcercaDe">About&#8230;</string>
+		<string name="menuAcercaTitulo">About&#8230;\nANA</string>
+		<string name="menuAcercaTexto">Made by Güimi (2010)\n
+			http://guimi.net\n
+			\n
+			Initial development based on samples and tutorials from Google, http://www.droidnova.com, http://www.anddev.org and http://blog.androgames.net.\n
+			\n
+			Main graphics by Prinz Eugn and Ari Feldman, modified by Güimi.\n
+			Auxiliar graphics by Güimi, ironstarmedia.co.uk and Google.\n
+			\n
+			Dedicated to Ana.\n
+		</string>
+	<string name="menuSalir">Exit</string>
+		<string name="menuSalirTitulo">Exit</string>
+		<string name="menuSalirTexto">Are you sure to quit?</string>
+		<string name="menuSalirTexto_Jugando">If you quit the game will be lost\nAre you sure to quit?</string>
+	<string name="menuJugar">Play</string>
+	<string name="menuMasJuegos">More Games</string>
+
+	<string name="linea_blanco">\n</string>
+	<string name="guimi_net">http://www.guimi.net</string>
+	<string name="guimi">Güimi</string>
+
+</resources>

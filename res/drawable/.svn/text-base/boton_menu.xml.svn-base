@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- boton con foco, pero no pulsado -->
+    <item android:state_focused="true" android:state_pressed="false" android:drawable="@drawable/fondo_boton1" />
+	<!-- boton con foco y pulsado -->
+    <item android:state_focused="true" android:state_pressed="true" android:drawable="@drawable/fondo_boton3" />
+	<!-- boton sin foco, pero pulsado -->
+    <item android:state_focused="false" android:state_pressed="true" android:drawable="@drawable/fondo_boton3" />
+	<!-- opcion por defecto -->
+    <item android:drawable="@drawable/fondo_boton2" />
+</selector>

@@ -1,0 +1,14 @@
+<resources>
+    <style name="Theme.ANATheme" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/fondo_1</item>
+
+        <!--  para no usar fondo
+        <item name="android:windowBackground">@null</item>
+        -->
+        
+        <!--  para especificar un fondo
+        <item name="android:windowBackground">@drawable/fondo_tema</item>
+        -->
+        
+    </style>
+</resources>
